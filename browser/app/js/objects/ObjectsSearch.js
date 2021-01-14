@@ -26,7 +26,7 @@ export const ObjectsSearch = ({ onChange }) => (
     <input
       className="ig-text"
       type="input"
-      placeholder="Search Objects..."
+      placeholder="请输入搜索内容"
       onChange={e => onChange(e.target.value)}
     />
     <i className="ig-helpers" />

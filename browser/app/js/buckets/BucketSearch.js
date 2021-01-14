@@ -27,7 +27,7 @@ export const BucketSearch = ({ onChange }) => (
       className="ig-text"
       type="text"
       onChange={e => onChange(e.target.value)}
-      placeholder="Search Buckets..."
+      placeholder="请输入搜索Bucket"
     />
     <i className="ig-helpers" />
   </div>

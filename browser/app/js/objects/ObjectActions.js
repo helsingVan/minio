@@ -90,7 +90,8 @@ export class ObjectActions extends React.Component {
             title="Share"
             onClick={this.shareObject.bind(this)}
           >
-            <i className="fas fa-share-alt" />
+            <span>分享</span>
+            {/* <i className="fas fa-share-alt" /> */}
           </a>
           {getDataType(object.name, object.contentType) == "image" && (
             <a
@@ -108,7 +109,8 @@ export class ObjectActions extends React.Component {
             title="Download"
             onClick={this.handleDownload.bind(this)}
           >
-            <i className="fas fa-cloud-download-alt" />
+            <span>下载</span>
+            {/* <i className="fas fa-cloud-download-alt" /> */}
           </a>
           <a
             href=""
@@ -116,7 +118,8 @@ export class ObjectActions extends React.Component {
             title="Delete"
             onClick={this.showDeleteConfirmModal.bind(this)}
           >
-            <i className="fas fa-trash-alt" />
+            <span>删除</span>
+            {/* <i className="fas fa-trash-alt" /> */}
           </a>
         </Dropdown.Menu>
         {showShareObjectModal && shareObjectName === object.name && (

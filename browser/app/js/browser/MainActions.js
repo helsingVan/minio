@@ -27,7 +27,7 @@ export const MainActions = ({
   uploadFile,
   showMakeBucketModal
 }) => {
-  const uploadTooltip = <Tooltip id="tt-upload-file">Upload file</Tooltip>
+  const uploadTooltip = <Tooltip id="tt-upload-file">上传文件</Tooltip>
   const makeBucketTooltip = (
     <Tooltip id="tt-create-bucket">Create bucket</Tooltip>
   )

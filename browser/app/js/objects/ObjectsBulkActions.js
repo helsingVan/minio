@@ -60,15 +60,15 @@ export class ObjectsBulkActions extends React.Component {
       >
         <span className="la-label">
           <i className="fas fa-check-circle" /> {checkedObjects.length}
-          {checkedObjects.length === 1 ? " Object " : " Objects "}
-          selected
+          {/* {checkedObjects.length === 1 ? " Object " : " Objects "} */}
+          个对象存储被选择
         </span>
         <span className="la-actions pull-right">
           <button id="download-checked" onClick={this.handleDownload.bind(this)}>
             {" "}
-            Download
+            下载
             {(checkedObjects.length === 1 && !checkedObjects[0].endsWith('/')) ? 
-            " object" : " all as zip" }{" "}
+            "" : "为压缩包" }{" "}
           </button>
         </span>
         <span className="la-actions pull-right">
@@ -77,7 +77,7 @@ export class ObjectsBulkActions extends React.Component {
             onClick={() => this.setState({ showDeleteConfirmation: true })}
           >
             {" "}
-            Delete selected{" "}
+            删除选择对象{" "}
           </button>
         </span>
         <i

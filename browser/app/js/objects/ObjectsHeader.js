@@ -42,7 +42,7 @@ export const ObjectsHeader = ({
         onClick={() => sortObjects(SORT_BY_NAME)}
         data-sort="name"
       >
-        Name
+        名称
         <i
           className={classNames({
             "fesli-sort": true,
@@ -59,7 +59,7 @@ export const ObjectsHeader = ({
         onClick={() => sortObjects(SORT_BY_SIZE)}
         data-sort="size"
       >
-        Size
+        大小
         <i
           className={classNames({
             "fesli-sort": true,
@@ -77,7 +77,7 @@ export const ObjectsHeader = ({
         onClick={() => sortObjects(SORT_BY_LAST_MODIFIED)}
         data-sort="last-modified"
       >
-        Last Modified
+        最后修改时间
         <i
           className={classNames({
             "fesli-sort": true,

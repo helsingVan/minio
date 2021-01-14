@@ -24,10 +24,10 @@ export const DeleteObjectConfirmModal = ({
   <ConfirmModal
     show={true}
     icon="fas fa-exclamation-triangle mci-red"
-    text="Are you sure you want to delete?"
-    sub="This cannot be undone!"
-    okText="Delete"
-    cancelText="Cancel"
+    text="确定要进行删除?"
+    sub="这个操作不可逆!"
+    okText="删除"
+    cancelText="取消"
     okHandler={deleteObject}
     cancelHandler={hideDeleteConfirmModal}
   />

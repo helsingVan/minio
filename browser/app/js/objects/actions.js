@@ -266,7 +266,7 @@ export const shareObject = (object, days, hours, minutes) => {
           dispatch(
             alertActions.set({
               type: "success",
-              message: `Object shared. Expires in ${days} days ${hours} hours ${minutes} minutes`,
+              message: `文件分享. 过期时间 ${days} 天 ${hours} 时 ${minutes} 分`,
             })
           )
         })

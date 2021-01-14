@@ -66,7 +66,7 @@ export const ObjectItem = ({
         </a>
       </div>
       <div className="fesl-item fesl-item-size">{size}</div>
-      <div className="fesl-item fesl-item-modified">{lastModified}</div>
+      <div className="fesl-item fesl-item-modified">{Moment(lastModified).format('YYYY-MM-DD HH:mm:ss')}</div>
       <div className="fesl-item fesl-item-actions">{actionButtons}</div>
     </div>
   )

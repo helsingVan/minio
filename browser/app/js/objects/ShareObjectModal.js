@@ -86,10 +86,10 @@ export class ShareObjectModal extends React.Component {
         onHide={hideShareObject}
         bsSize="small"
       >
-        <ModalHeader>Share Object</ModalHeader>
+        <ModalHeader>文件分享</ModalHeader>
         <ModalBody>
           <div className="input-group copy-text">
-            <label>Shareable Link</label>
+            <label>分享链接地址</label>
             <input
               type="text"
               ref={node => (this.copyTextInput = node)}
@@ -103,7 +103,7 @@ export class ShareObjectModal extends React.Component {
             className="input-group"
             style={{ display: web.LoggedIn() ? "block" : "none" }}
           >
-            <label>Expires in (Max 7 days)</label>
+            <label>有效期 (最大7天)</label>
             <div className="set-expire">
               <div className="set-expire-item">
                 <i
@@ -111,7 +111,7 @@ export class ShareObjectModal extends React.Component {
                   className="set-expire-increase"
                   onClick={() => this.updateExpireValue("days", 1)}
                 />
-                <div className="set-expire-title">Days</div>
+                <div className="set-expire-title">天</div>
                 <div className="set-expire-value">
                   <input
                     ref="expireDays"
@@ -134,7 +134,7 @@ export class ShareObjectModal extends React.Component {
                   className="set-expire-increase"
                   onClick={() => this.updateExpireValue("hours", 1)}
                 />
-                <div className="set-expire-title">Hours</div>
+                <div className="set-expire-title">时</div>
                 <div className="set-expire-value">
                   <input
                     ref="expireHours"
@@ -157,7 +157,7 @@ export class ShareObjectModal extends React.Component {
                   className="set-expire-increase"
                   onClick={() => this.updateExpireValue("minutes", 1)}
                 />
-                <div className="set-expire-title">Minutes</div>
+                <div className="set-expire-title">分</div>
                 <div className="set-expire-value">
                   <input
                     ref="expireMins"
@@ -183,10 +183,10 @@ export class ShareObjectModal extends React.Component {
             text={url}
             onCopy={this.onUrlCopied.bind(this)}
           >
-            <button className="btn btn-success">Copy Link</button>
+            <button className="btn btn-success">复制链接</button>
           </CopyToClipboard>
           <button className="btn btn-link" onClick={hideShareObject}>
-            Cancel
+            取消
           </button>
         </div>
       </Modal>

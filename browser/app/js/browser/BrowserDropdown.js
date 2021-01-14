@@ -110,12 +110,12 @@ export class BrowserDropdown extends React.Component {
             </li> */}
             <li>
               <a target="_blank" href="http://cloud.njbps.com/home/#/download">
-                Download Center<i className="fas fa-book" />
+                使用文档和下载中心<i className="fas fa-book" />
               </a>
             </li>
             <li>
               <a href="" id="logout" onClick={this.logout}>
-                Logout <i className="fas fa-sign-out-alt" />
+                退出 <i className="fas fa-sign-out-alt" />
               </a>
             </li>
           </Dropdown.Menu>

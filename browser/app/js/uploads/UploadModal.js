@@ -50,7 +50,7 @@ export class UploadModal extends React.Component {
     // If more than one: "Uploading files (5)..."
     // If only one: "Uploading myfile.txt..."
     let text =
-      "Uploading " +
+      "上传中 " +
       (numberUploading == 1
         ? `'${uploads[Object.keys(uploads)[0]].name}'`
         : `files (${numberUploading})`) +

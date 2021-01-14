@@ -146,7 +146,7 @@ export const uploadFile = file => {
         dispatch(
           alertActions.set({
             type: "success",
-            message: "File '" + filePath + "' uploaded successfully."
+            message: "文件 '" + filePath + "' 上传成功"
           })
         )
         dispatch(objectsActions.selectPrefix(currentPrefix))

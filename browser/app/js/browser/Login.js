@@ -166,7 +166,7 @@ export class Login extends React.Component {
           <a className="lf-logo" href="">
             <img src={logo} alt="" />
           </a>
-          <div className="lf-server">{window.location.host}</div>
+          {/* <div className="lf-server">{window.location.host}</div> */}
         </div>
       </div>
     )

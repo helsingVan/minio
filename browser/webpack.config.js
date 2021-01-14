@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-const proxyUrl = 'http://172.29.125.100:8999'
+const proxyUrl = 'http://172.29.130.92:9000'
 
 var webpack = require('webpack')
 var path = require('path')
@@ -77,7 +77,7 @@ var exports = {
       '/minio/webrpc': {
         target: proxyUrl,
         secure: false,
-        headers: {'Host': "localhost:9000"}
+        // headers: {'Host': "localhost:9000"}
       },
       '/minio/upload/*': {
         target: proxyUrl,
