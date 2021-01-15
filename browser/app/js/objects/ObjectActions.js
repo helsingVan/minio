@@ -87,7 +87,6 @@ export class ObjectActions extends React.Component {
           <a
             href=""
             className="fiad-action"
-            title="Share"
             onClick={this.shareObject.bind(this)}
           >
             <span>分享</span>
@@ -106,7 +105,6 @@ export class ObjectActions extends React.Component {
           <a
             href=""
             className="fiad-action"
-            title="Download"
             onClick={this.handleDownload.bind(this)}
           >
             <span>下载</span>
@@ -115,7 +113,6 @@ export class ObjectActions extends React.Component {
           <a
             href=""
             className="fiad-action"
-            title="Delete"
             onClick={this.showDeleteConfirmModal.bind(this)}
           >
             <span>删除</span>

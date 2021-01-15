@@ -45,12 +45,12 @@ export class AbortConfirmModal extends React.Component {
       <ConfirmModal
         show={true}
         baseClass={baseClass}
-        text="Abort uploads in progress?"
+        text="中止上传文件?"
         icon="fas fa-info-circle mci-amber"
-        sub="This cannot be undone!"
-        okText="Abort"
+        sub="这个操作不可逆!"
+        okText="中止"
         okIcon={okIcon}
-        cancelText="Upload"
+        cancelText="取消"
         cancelIcon={cancelIcon}
         okHandler={this.abortUploads.bind(this)}
         cancelHandler={hideAbort}
